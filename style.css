@@ -1,0 +1,111 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#logo {
+  width: 110px;
+  height: 85px;
+  transform: scale(1, 1.9);
+}
+
+.preloader {
+  background: #000 url(./DualBall-1s-200px.gif) no-repeat center center;
+  height: 100vh;
+  width: 100%;
+  background-size: 30%;
+  position: fixed;
+  z-index: 100;
+}
+main {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.1);
+  background-blend-mode: darken;
+  background-image: url(./bgmain.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main h1,
+main p {
+  color: white;
+}
+
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 24%;
+  height: 200px;
+  object-position: center;
+  margin: 2px;
+  border: 1px solid black;
+  opacity: 1;
+}
+
+.gallery img:hover {
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 676px) {
+  .gallery {
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery img {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+#top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+}
+
+.qolipBG {
+  width: 100%;
+  height: 100vh;
+  background: rgba(29, 4, 47, 0.5) url(./Qolip/qoliprasm2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-blend-mode: darken;
+}
+
+.qolipBG p {
+  color: white;
+  font-size: 20px;
+  padding-top: 50px;
+  padding-left: 10px;
+}
+
+.tokarBG {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5) url(./tokarImg/tokar2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-blend-mode: darken;
+}
+
+.tokarBG p {
+  color: white;
+  font-size: 24px;
+  padding-top: 50px;
+}
