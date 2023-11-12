@@ -210,8 +210,6 @@
       </button>
     </div>
 
-  
-
     <!--  about -->
     <section id="about" class="dark:bg-gray-800 dark:text-gray-100">
       <div
@@ -296,7 +294,9 @@
             ></polygon>
           </svg>
           <span
-            ><a class="text-2xl no-underline hover:underline" href="./tokar.html"
+            ><a
+              class="text-2xl no-underline hover:underline"
+              href="./tokar.html"
               >Токарний Oбработка</a
             ></span
           >
@@ -315,7 +315,13 @@
               points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"
             ></polygon>
           </svg>
-          <span><a class="text-2xl no-underline hover:underline" href="3d_dizayn.html">3D Дизайн</a></span>
+          <span
+            ><a
+              class="text-2xl no-underline hover:underline"
+              href="3d_dizayn.html"
+              >3D Дизайн</a
+            ></span
+          >
         </li>
         <li class="flex mb-4 items-center space-x-2">
           <svg
@@ -351,8 +357,6 @@
     <section class="relative pt-16 bg-blueGray-50">
       <div class="container mx-auto">
         <div class="flex flex-wrap items-center">
-        
-
           <div class="w-full md:w-12/12 px-4">
             <div class="flex flex-wrap">
               <div class="w-full md:w-6/12 px-4">
@@ -420,7 +424,7 @@
       <div class="flex justify-center items-start my-2">
         <div class="w-full sm:w-10/12 md:w-1/2 my-1">
           <h2 class="text-xl font-semibold text-vnet-blue mb-2">
-            Qo'shimcha savollar
+            Қўшимча саволлар
           </h2>
           <ul class="flex flex-col">
             <li class="bg-white my-2 shadow-lg" x-data="accordion(1)">
@@ -451,41 +455,13 @@
                 </p>
               </div>
             </li>
-            <li class="bg-white my-2 shadow-lg" x-data="accordion(2)">
-              <h2
-                @click="handleClick()"
-                class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
-              >
-                <span>МУAММО №2</span>
-                <svg
-                  :class="handleRotate()"
-                  class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
-                  ></path>
-                </svg>
-              </h2>
-              <div
-                class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
-                x-ref="tab"
-                :style="handleToggle()"
-              >
-                <p class="p-3 text-gray-900">
-                  Техник инновациялардан оқилона йечим йўқ ишлаб чиқарувчи.
-                  Қолиб нархи жуда қимматга тушади учун ишлаб чиқарувчидан йечим
-                  ололмаслигингиз учун қолипнинг ҳам, ҳосил бўладиган
-                  маҳсулотларнинг ҳам таннархини пасайтириш мақсадида.
-                </p>
-              </div>
-            </li>
+
             <li class="bg-white my-2 shadow-lg" x-data="accordion(3)">
               <h2
                 @click="handleClick()"
                 class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
               >
-                <span>МУAММО №3</span>
+                <span>МУAММО №2</span>
                 <svg
                   :class="handleRotate()"
                   class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
@@ -512,7 +488,7 @@
                 @click="handleClick()"
                 class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
               >
-                <span>МУAММО №4?</span>
+                <span>МУAММО №3?</span>
                 <svg
                   :class="handleRotate()"
                   class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
@@ -535,41 +511,13 @@
                 </p>
               </div>
             </li>
-            <li class="bg-white my-2 shadow-lg" x-data="accordion(5)">
-              <h2
-                @click="handleClick()"
-                class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
-              >
-                <span>Tаклифлар №1?</span>
-                <svg
-                  :class="handleRotate()"
-                  class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
-                  ></path>
-                </svg>
-              </h2>
-              <div
-                class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
-                x-ref="tab"
-                :style="handleToggle()"
-              >
-                <p class="p-3 text-gray-900">
-                  Бизнинг менежерларимиз бир неча тилларда гаплашади, бу уларга
-                  беради катта афзаллик ва нима олишингизни кафолатлайди
-                  хоҳлаган. Техник топшириқ бўладиган жойда ҳам тўлдирилади
-                  барча истакларингиз ва талабларингиз тасвирланган.
-                </p>
-              </div>
-            </li>
+
             <li class="bg-white my-2 shadow-lg" x-data="accordion(6)">
               <h2
                 @click="handleClick()"
                 class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
               >
-                <span>Tаклифлар №2</span>
+                <span>Tаклифлар №1</span>
                 <svg
                   :class="handleRotate()"
                   class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
@@ -733,8 +681,7 @@
             ></textarea>
           </label>
           <a
-          href="mailto:Istiqlol2000@mail.ru"
-            
+            href="mailto:Istiqlol2000@mail.ru"
             class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
           >
             Jo'natish
@@ -770,29 +717,29 @@
     ></script>
     <script type="text/javascript">
       document.addEventListener("alpine:init", () => {
-  Alpine.store("accordion", {
-    tab: 0,
-  });
+        Alpine.store("accordion", {
+          tab: 0,
+        });
 
-  Alpine.data("accordion", (idx) => ({
-    init() {
-      this.idx = idx;
-    },
-    idx: -1,
-    handleClick() {
-      this.$store.accordion.tab =
-        this.$store.accordion.tab === this.idx ? 0 : this.idx;
-    },
-    handleRotate() {
-      return this.$store.accordion.tab === this.idx ? "rotate-180" : "";
-    },
-    handleToggle() {
-      return this.$store.accordion.tab === this.idx
-        ? `max-height: ${this.$refs.tab.scrollHeight}px`
-        : "";
-    },
-  }));
-});
+        Alpine.data("accordion", (idx) => ({
+          init() {
+            this.idx = idx;
+          },
+          idx: -1,
+          handleClick() {
+            this.$store.accordion.tab =
+              this.$store.accordion.tab === this.idx ? 0 : this.idx;
+          },
+          handleRotate() {
+            return this.$store.accordion.tab === this.idx ? "rotate-180" : "";
+          },
+          handleToggle() {
+            return this.$store.accordion.tab === this.idx
+              ? `max-height: ${this.$refs.tab.scrollHeight}px`
+              : "";
+          },
+        }));
+      });
 
       (function () {
         emailjs.init("user_LGFWtxXGSYcX6h1lDXQlF");
@@ -853,9 +800,7 @@
       window.addEventListener("load", function () {
         loader.style.display = "none";
       });
-      
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
-   
   </body>
 </html>
